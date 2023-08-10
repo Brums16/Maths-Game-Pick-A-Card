@@ -198,7 +198,7 @@ const gameOver = () => {
             }}>Time remaining: {time}</h3>
             <div className="timerContainer">{timerBar()}</div>
             {/*temporary container here to keep score and check it's working based on condition */}
-            <div>Temporary score: {score} </div>
+            <div>Score: {score} </div>
             <div className="livesContainer">
             {livesDisplay()}
             </div>
