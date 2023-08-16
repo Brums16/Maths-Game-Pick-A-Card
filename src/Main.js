@@ -101,6 +101,9 @@ const Main = () => {
     useEffect(() =>{
         if (lives === 0||time === 0){
             setIsGameOver(true)
+            if (score > highScore){
+                setHighScore(score)
+            }
             clearInterval(intervalRef.current)
         }
         }, [lives, time])   
